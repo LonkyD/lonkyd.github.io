@@ -25,9 +25,17 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="assets/js/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css" media="screen">
+
+<meta name="robots" content="noindex,follow" />
   </head>
 
   <body>
+
+	<!-- Audio Player HTML -->
+	<!-- end Audio Player HTML -->
 
     <!-- Static navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -66,6 +74,13 @@
 	    </div> <!-- /container -->
 	</div><! --/headerwrap -->
 	
+		<!-- Audio Player HTML -->
+
+
+
+	<!-- end Audio Player HTML -->
+	
+	
 	<section id="works"></section>
 	<div class="container">
 		<div class="row centered mt mb">
@@ -81,8 +96,18 @@
 				<a href="GoatAdopt2.0/index.html"><img src="assets/img/portfolio/folio03.png" class="img-responsive"><h4>小羊认养</h4></a>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
-				
+					<!-- Audio Player HTML -->
+	<div class="audio-player">
+		<h1>Demo - Preview Song</h1>
+		<img class="cover" src="assets/img/cover.png" alt="">
+		<audio id="audio-player" src="assets/media/demo.mp3" type="audio/mp3" controls="controls"></audio>
+	</div>
+
+
+	<!-- end Audio Player HTML -->
+
 			</div>
+			
 			<div class="paytome">
 				<div class="helpus2" ontouchend="document.querySelector('.paycode').style.display='block'">
 					<div class="paycode">
@@ -92,6 +117,10 @@
 				</div>
 				</div>
 			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				
+			</div>
+			
 			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
 				
 			</div>
@@ -119,12 +148,27 @@
 	</div><! --/footerwrap -->
 	
 
+	<!-- Audio Player HTML -->
 
+
+	<script>
+		$(document).ready(function() {
+			$('#audio-player').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause','volume','progress'],
+				audioVolume: 'horizontal',
+				audioWidth: 400,
+				audioHeight: 120
+			});
+		});
+	</script>
+	<!-- end Audio Player HTML -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-     <script src="assets/js/jquery.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster
+     <script src="assets/js/jquery.min.js"></script> -->
+	 <script src="assets/js/bootstrap.min.js"></script>
   </body>
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+    
+
 </html>
