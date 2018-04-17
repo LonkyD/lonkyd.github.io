@@ -12,8 +12,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
@@ -25,7 +23,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/amazingaudioplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/initaudioplayer-1.css">
+    <script src="assets/js/initaudioplayer-1.js"></script>
+	
 	<script src="assets/js/mediaelement-and-player.min.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css" media="screen">
 
@@ -118,7 +120,40 @@
 					</div>
 				</div>
 			</div>
-			
+			<div style="margin:12px auto;">
+    			<div class="paytome">
+				<div class="helpvb2" ontouchend="document.querySelector('.vbcode').style.display='block'">
+					<div class="vbcode">
+						<img src="./assets/img/vb.jpg">
+					</div>
+				</div>
+			</div>
+    <!-- Insert to your webpage where you want to display the audio player -->
+	<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+    <div id="amazingaudioplayer-1" style="display:block;position:relative;width:100%;max-width:300px;height:164px;margin:0px auto 0px;">
+        <ul class="amazingaudioplayer-audios" style="display:none;">
+            <li data-artist="" data-title="Come and Get Your Love" data-album="" data-info="" data-image="assets/img/cover.png" data-duration="0">
+                <div class="amazingaudioplayer-source" data-src="assets/media/Come and Get Your Love.mp3" data-type="audio/mpeg" />
+            </li>
+            <li data-artist="" data-title="Walk off the Earth - Champs-Élysées" data-album="" data-info="" data-image="assets/img/erweima.jpg" data-duration="0">
+                <div class="amazingaudioplayer-source" data-src="assets/media/Walk off the Earth - Champs-Élysées.mp3" data-type="audio/mpeg" />
+            </li>
+            <li data-artist="" data-title="demo曲" data-album="" data-info="" data-image="assets/img/vb.jpg" data-duration="0">
+                <div class="amazingaudioplayer-source" data-src="assets/media/demo.mp3" data-type="audio/mpeg" />
+            </li>
+        </ul>
+        <div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com" title="audio player for website">jquery music player</a></div>
+    </div>
+    <!-- End of body section HTML codes -->
+	</div>
+				<div class="paytome">
+				<div class="helpvb2" ontouchend="document.querySelector('.vbcode').style.display='block'">
+					<div class="vbcode">
+						<img src="./assets/img/vb.jpg">
+					</div>
+				</div>
+			</div>
+</div>
 			
 		</div><! --/row -->
 	</div><! --/container -->
