@@ -112,15 +112,15 @@
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-play {
-	position: relative;
+	/*position: relative;*/
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-pause {
-	position: relative;
+	/*position: relative;*/
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-stop {
-	position: relative;
+	/*position: relative;*/
 	float: left;
 }
 
@@ -228,14 +228,14 @@
 
 #amazingaudioplayer-1 .amazingaudioplayer-tracklist {
 	display: block;
-	position: relative;
+	/*position: relative;*/
 	top: 168px;
 	left: 0;
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-tracklist-container {
 	display: block;
-	position: relative;
+	/*position: relative;*/
 	background-color: #333;
 	border: 1px solid #222;
 	-webkit-border-radius: 2px;
@@ -255,18 +255,18 @@
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-tracks-wrapper {
-	position: relative;
+	/*position: relative;*/
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-tracks {
-	position: relative;
+	/*position: relative;*/
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 #amazingaudioplayer-1 .amazingaudioplayer-track-item {
-	position: relative;
+	/*position: relative;*/
 	cursor: pointer;
 	color: #999;
 	font-family: 'Open Sans', Arial, sans-serif;

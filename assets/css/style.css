@@ -343,7 +343,7 @@ a.helpus:hover {
 	color:#666;
 	font-size:16px;
 	line-height:2;
-	
+	position: relative;
 	background: url(../img/paybutton.png) no-repeat center  #fff;
 	background-size:cover;
 	width: 300px;
@@ -363,7 +363,9 @@ a.helpus:hover {
 	
 }
 .helpus2:hover {
+	position: relative;
 	border: 1px solid orange;
+	z-Index :999;
 	-webkit-transition: border 300ms ease-in 0ms;
 	-moz-transition: border 300ms ease-in 0ms;
 	-ms-transition: border 300ms ease-in 0ms;
@@ -373,6 +375,7 @@ a.helpus:hover {
 .helpus2 .paycode{
 	display:none;
 	position:relative;
+	z-Index = 999;
 	margin:-55% -78%;
 	padding:20px;
 	width:686px;
@@ -385,6 +388,7 @@ a.helpus:hover {
 
 .helpus2:hover .paycode{
 	display:block;
+	z-Index : 999;
 }
 /* for VB 
 *这是专门为了感谢唯笔淡墨用哒~别看啦~
@@ -413,6 +417,7 @@ a.helpvb{
 	
 }
 a.helpvb:hover {
+	z-Index :999;
 	border: 1px solid #0f87d3;
 	-webkit-transition: border 300ms ease-in 0ms;
 	-moz-transition: border 300ms ease-in 0ms;
@@ -448,6 +453,7 @@ a.helpvb:hover {
 	
 }
 .helpvb2:hover {
+	z-Index :999;
 	border: 1px solid orange;
 	-webkit-transition: border 300ms ease-in 0ms;
 	-moz-transition: border 300ms ease-in 0ms;
@@ -456,6 +462,7 @@ a.helpvb:hover {
 	transition: border 300ms ease-in 0ms;
 }
 .helpvb2 .vbcode{
+	z-Index :999;
 	display:none;
 	position:relative;
 	margin:-55% -78%;
