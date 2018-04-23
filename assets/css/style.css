@@ -337,6 +337,7 @@ a.helpus:hover {
 
 
 .helpus2{
+	box-shadow: 10px 10px 5px #888888;
 	display:block;
 	margin: 20px auto;
 	text-decoration:none;
@@ -444,7 +445,7 @@ a.helpvb:hover {
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
 	border-radius: 10px;
-	
+	box-shadow: 10px 10px 5px #888888;
 	-webkit-transition: border 500ms ease-in 0ms;
 	-moz-transition: border 500ms ease-in 0ms;
 	-ms-transition: border 500ms ease-in 0ms;
