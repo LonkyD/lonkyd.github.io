@@ -14,6 +14,9 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="assets/css/material-icons.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -181,8 +184,40 @@
 			</div>
 		</div>
 	</div><! --/footerwrap -->
-	
-
+	<div class="fixed-action-btn toTop" style="bottom: 45px; right: 24px;">
+	    <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">keyboard_arrow_up</i></a>
+	</div>
+	  <script type="text/javascript" src="assets/js/materialize.js"></script>
+	  <script>
+		$(document).ready(function() {
+			$('select').material_select();
+		 });
+		$(function () {
+            var $backToTopEle = $('.toTop'), $backToTopFun = function () {
+                var st = $(document).scrollTop(), winh = $(window).height();
+                (st > 200) ? $backToTopEle.fadeIn('slow') : $backToTopEle.fadeOut('slow');
+                if (!window.XMLHttpRequest) {
+                    $backToTopEle.css("top", st + winh - 166);
+                }
+            };
+            $('.toTop').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 1200);
+            })
+            $backToTopEle.hide();
+            $backToTopFun();
+            $(window).bind("scroll", $backToTopFun);
+            $('#catalogWord').click(function () {
+                $("#catalog").slideToggle(600);
+            })
+        })
+		$(".activity_overflow").each(function(){
+        var maxwidth=72;
+        if($(this).text().length>maxwidth){
+            $(this).text($(this).text().substring(0,maxwidth));
+            $(this).html($(this).html()+'...');
+        }
+    });
+	  </script>
 	<!-- Audio Player HTML -->
 
 
