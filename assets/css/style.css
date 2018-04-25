@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-brand {
-	color: #1abc9c;
+	color: #2196f3;
 }
 
 .navbar-default {
@@ -76,13 +76,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #1abc9c;
+	color: #428bca;
 	background-color: transparent;
-	border-bottom: 2px solid #1abc9c
+	border-bottom: 2px solid #428bca
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #1abc9c;
+	color: #428bca;
 }
 .copyrights{
 	text-indent:-9999px;
@@ -129,7 +129,33 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	color: #ffffff
 }
+#sweetywrap h1{
+	color:#ffffff;
+	padding-top: 10px;
+	letter-spacing: 4px;
+	font-size: 60px;
+	font-weight: bold;
+}
+.container-list {
+  max-height: 340px;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  border-top: 1px solid transparent;
+  background-color:#c7c3c3;
+  height:51px;
+}
 
+.container-list ul {
+  background-color:#c7c3c3;
+  
+}
+/**********************/
+
+
+
+
+/**********************/
 #social {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -270,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-background-size: cover;
     background-size: cover;
 }
-#aboutwrapfarm {	
+#sweetywrap {	
 	background: url(../img/farm.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
